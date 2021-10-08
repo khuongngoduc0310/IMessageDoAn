@@ -1,0 +1,205 @@
+/* formLogin */
+.formLogin__header{
+    max-width: 1200px;
+    padding: 30px;
+}
+
+.formLogin__header-navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formLogin__header-img{
+    text-align: center;
+}
+
+.formLogin__header-img-logo{
+    width: 50px;
+}
+
+.formLogin__navbar-list{
+    list-style: none;
+    display: flex;
+}
+
+.formLogin__navbar-item{
+    height: 50px;
+    min-width: 100px;
+}
+
+.formLogin__item-link:hover .formLogin__item-link::before{
+    
+}
+
+.formLogin__item-link:hover::after {
+    background-color: #0a7cff;
+}
+
+.formLogin__item-link::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+}
+
+.formLogin__item-link{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 550;
+    margin: 0 15px;
+}
+
+.formLogin__navbar-item:first-child .formLogin__item-link{
+    margin-left: 0;
+}
+
+.formLogin__navbar-item:last-child .formLogin__item-link{
+    margin-left: 0;
+}
+
+/* body */
+.formLogin__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formLogin__body-content {
+    width: 440px;
+}
+
+.formLogin__content-sologan {
+    font-size: 90px;
+    font-weight: 500;
+    letter-spacing: -4px;
+    color: transparent;
+    background-image: linear-gradient(
+        83.84deg
+        , #0088FF -6.87%, #A033FF 26.54%, #FF5C87 58.58%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.formLogin__content-description {
+    margin-bottom: 38px;
+    display: block;
+    font-size: 20px;
+}
+
+.formLogin__content-form {
+
+}
+
+.formLogin__form-group {
+
+}
+
+.formLogin__group-input {
+    display: block;
+    width: 288px;
+    height: 20px;
+    padding: 8px 16px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f5f5f5;
+    outline: none;
+}
+
+.formLogin__group-input:focus {
+    border: 1px solid #0a7cff;
+}
+
+.formLogin__group-btn {
+
+}
+
+.formLogin__group-btnLogin:hover {
+    background-color: #4d4dff;
+}
+
+.formLogin__group-btnLogin {
+    width: 137px;
+    height: 44px;
+    background-color: #0a7cff;
+    border: none;
+    border-radius: 35px;
+    color: white;
+    font-size: 18px;
+    font-weight: 550;
+    margin: 20px 0 12px 0;
+}
+
+.formLogin__group-btnResetPassword {
+    color: #0a7cff;
+    display: inline-block;
+    margin: 0 0 26px 20px;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.formLogin__group-register{
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.formLogin__group-register:hover {
+    color: #0a7cff;
+}
+
+.formLogin__group-savePW {
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+}
+
+.formLogin__savePW-radio {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.formLogin__savePW-label {
+    margin: 0 0 0 20px;
+}
+
+.formLogin__savePW-radio-icon{
+    display: none;
+}
+
+.formLogin__savePW-radio--checked .formLogin__savePW-radio-icon {
+    position: absolute;
+    display: block;
+    border-radius: 3px;
+    color: #0a7cff;
+    font-size: 16px;
+    top: -2px;
+    left: -1px;
+}
+
+
+.formLogin__form-download {
+}
+
+.formLogin_form-download-img {
+    height: 44px;
+    border-radius: 3px;
+}
+
+.formLogin__body-image-main {
+    max-width: 600px;
+}
+
+

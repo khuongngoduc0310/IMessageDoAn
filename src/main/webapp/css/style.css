@@ -742,3 +742,70 @@ main {
 .formLogin__body-image-main {
     max-width: 600px;
 }
+.open{
+    display: flex !important;
+}
+.register{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.register-container{
+    position: relative;
+    background: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+}
+.register .register-header{
+    background: #0088FF;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+.register .register-close-icon {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.register .register-close-icon{
+opacity: 1;
+}
+.register-body{
+    padding: 15px;
+}
+.register-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+#register-btn{
+    background: #41A336;
+    border-radius: 3px;
+    border: none;
+    font-size: 30px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+#register-btn:hover{
+    opacity: 0.8;
+}

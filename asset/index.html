@@ -65,7 +65,7 @@
                             <div class="formLogin__group-btn">
                                 <button class="formLogin__group-btnLogin">Đăng nhập</button>
                                 <a class="formLogin__group-btnResetPassword" href="">Quên mật khẩu?</a>
-                                <a class="formLogin__group-register" href="">Đăng ký nếu chưa có tài khoản</a>
+                                <a class="formLogin__group-register js-register-open" href="#">Đăng ký nếu chưa có tài khoản</a>
                             </div>
                             <div class="formLogin__group-savePW">
                                 <!--nếu duy trì đăng nhập add class này: formLogin__savePW-radio--checked -->
@@ -94,6 +94,67 @@
             </footer>
         </div>
     </div>
+    <!-- REGISTER -->
+    <div class="register js-register">
+      <div class="register-container ">
+       <header class="register-header">
+           Đăng kí
+       </header>
+       <div class="register-close js-register-close">
+           <i class="register-close-icon ti-close js-register-close"></i>
+       </div>
+       <div class="register-body">
+           <div class="register-row">
+           <label for="" class="register-label">
+               Họ và tên
+           </label>
+           <input type="text" placeholder="Họ và tên" class="register-input">
+       </div>
+       <div class="register-row">
+           <label for="" class="register-label">
+               Email
+           </label>
+           <input type="text" placeholder="Email" class="register-input">
+       </div>
+       <div class="register-row">
+           <label for="" class="register-label">
+               Số điện thoại
+           </label>
+           <input type="text" placeholder="Số điện thoại" class="register-input">
+       </div>
+       <div class="register-row">
+           <label for="" class="register-label">
+               Mật khẩu
+           </label>
+           <input type="text" placeholder="Mật khẩu" class="register-input">
+       </div>
+       <div class="register-row">
+           <label for="" class="register-label">
+               Nhập lại mật khẩu
+           </label>
+           <input type="text" placeholder="Nhập lại mật khẩu" class="register-input">
+       </div>
+       <button id="register-btn">
+        Đăng kí
+       </button>
+
+       </div>
+    </div>
+    <!-- Đăng kí -->
+    <script>
+        const regsopen = document.querySelector('.js-register-open')
+        const regsclose = document.querySelector('.js-register-close')
+        const register = document.querySelector('.js-register')
+        function Showregister(){
+            register.classList.add('open')
+        }
+        function Hideregister(){
+            register.classList.remove('open')
+        }
+        regsopen.addEventListener('click',Showregister)
+        regsclose.addEventListener('click',Hideregister)
+    </script>
+
 
     <!-- Duy trì đăng nhập -->
     <script>

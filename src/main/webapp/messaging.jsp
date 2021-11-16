@@ -1,4 +1,4 @@
-<%@page import="Model.User"%>
+<%@page import="Model.BEAN.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -19,20 +19,22 @@ String targetId = request.getParameter("targetID");
 if (targetId == null)
 	targetId = "-1";
 %>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/normalize.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     	setInterval(loadMessage,1000);
 		function loadMessage(){
-    		$.post("loadmessage.jsp",{sendID : "<%out.print(user.getUser_ID());%>", receiveID : "<%out.print(targetId);%>"},function(data,status){
+    		$.post("C_loadmessage",{sendID : "<%out.print(user.getUser_ID());%>", receiveID : "<%out.print(targetId);%>"},function(data,status){
     			document.getElementsByClassName("grid-message")[0].innerHTML = data;
     		});
+    		
+    		
     	};
     	function sendMessage(){
     		let content = document.getElementById("message-content").value;
-    		$.post("sendMessage.jsp",{sendID : "<%out.print(user.getUser_ID());%>", receiveID : "<%out.print(targetId);%>", messContent : content});
+    		$.post("C_sendmessage",{sendID : "<%out.print(user.getUser_ID());%>", receiveID : "<%out.print(targetId);%>", messContent : content});
     		loadMessage();
     		document.getElementById("message-content").value = "";
     	};

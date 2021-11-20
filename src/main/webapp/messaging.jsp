@@ -51,10 +51,9 @@ if (targetId == null)
 		<header>
 			<div class="container">
 				<div class="middle">
-					<p>Messenger</p>
-				</div>
-				<div class="right">
-					<div class="username">Name</div>
+					<img src="./img/message.png" alt="" class="icon_message">
+					<div class="username right">Name</div>
+                    <img src="./img/person.png " alt="" class="right icon_person">
 				</div>
 			</div>
 		</header>

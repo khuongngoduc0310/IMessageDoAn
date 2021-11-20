@@ -76,7 +76,10 @@ header {
 	position: relative;
 	display: block;
 	padding-left: 20px;
-	padding-right: 20px
+	padding-right: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 header>div {
@@ -88,15 +91,9 @@ header>div {
 	overflow: hidden
 }
 
-header .middle {
-	position: absolute;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%)
+.icon_message{
+    height:64px;
 }
-
 header .middle h3 {
 	margin-bottom: 3px
 }
@@ -113,13 +110,13 @@ header .right {
 	text-align: right;
 	width: auto;
 	float: right;
-	position: relative
+	position: relative;
 }
 
 header .avatar {
 	margin-left: 15px;
 	display: inline-block;
-	float: right
+	float: right;
 }
 
 header .avatar img {
@@ -148,11 +145,8 @@ header .settings:after {
 }
 
 header .username {
-	display: inline-block;
-	height: 70px;
-	font-size: 14px;
-	line-height: 72px;
-	font-weight: 600
+font-size: 36px;
+color: #9197a5;
 }
 
 header .username img {
@@ -808,4 +802,44 @@ opacity: 1;
 }
 #register-btn:hover{
     opacity: 0.8;
+}
+.person{
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.person .img_person{
+    height: 400px;
+    width: 400px;
+
+}
+.clock{
+    font-size:  80px;
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.clock .time{
+    
+    display: inline-block;
+
+}
+.call{
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.call .img_item{
+    padding: 30px 60px;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+.call .img_item:hover{
+    opacity: 0.6;
 }

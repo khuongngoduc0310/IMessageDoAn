@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Model.BEAN.Message;
-import Model.DO.sendmessageDO;
+import Model.BO.sendmessageBO;
 
 /**
  * Servlet implementation class sendmessageservlet
@@ -35,7 +35,7 @@ public class C_sendmessage extends HttpServlet {
 		String sendID = request.getParameter("sendID");
 		String content = request.getParameter("messContent");
 		System.out.println(content);
-		sendmessageDO mess = new sendmessageDO();
+		sendmessageBO mess = new sendmessageBO();
 		Message message = new Message(-1, Integer.parseInt(sendID), Integer.parseInt(receiveID), LocalDateTime.now(), content );
 		mess.postMessage(message);
 		

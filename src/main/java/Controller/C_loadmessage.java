@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Model.BEAN.Message;
-import Model.DO.loadmessageDO;
+import Model.BO.loadmessageBO;
 
 /**
  * Servlet implementation class loadmessageservlet
@@ -34,7 +34,7 @@ public class C_loadmessage extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String receiveID = request.getParameter("receiveID");
 		String sendID = request.getParameter("sendID");
-		loadmessageDO mess = new loadmessageDO();
+		loadmessageBO mess = new loadmessageBO();
 		List<Message> messages = mess.getMessages(Integer.parseInt(sendID), Integer.parseInt(receiveID));
 		String data = "";
 		if (messages != null)

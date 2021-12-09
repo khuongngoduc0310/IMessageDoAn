@@ -1,5 +1,6 @@
 package Model.DAO;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,8 +16,8 @@ import Model.BEAN.Message;
 
 public class MessageDAO {
 	
-	java.sql.Connection con;
-	public void connectDatabase() {
+	Connection con;
+	 void connectDatabase() {
 		try {
 			SQLServerDriver a = new SQLServerDriver(); 
 			System.out.println(a);
@@ -24,8 +25,8 @@ public class MessageDAO {
 			String connectionURL = "jdbc:sqlserver://DESKTOP-UPKO6D9\\\\SQLEXPRESS:1433;DatabaseName=IMessage;integratedSecurity=false;";
 			con = DriverManager.getConnection(connectionURL,"sa","160501");
 			} catch (Exception e) {
-			System.out.println("Kết nối thất bại");
 			}
+		
 	}
 	public List<Message> getMessages(int sendID, int receiveID) {
 		connectDatabase();

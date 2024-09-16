@@ -11,15 +11,15 @@ import Model.BEAN.User;
 
 public class LoginDAO {
       Connection con;
-	public void connectDatabase() {
+	void connectDatabase() {
 		try {
 			SQLServerDriver a = new SQLServerDriver(); 
 			System.out.println(a);
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			String connectionURL = "jdbc:sqlserver://DESKTOP-UPKO6D9\\\\SQLEXPRESS:1433;DatabaseName=IMessage;integratedSecurity=false;";
 			con = DriverManager.getConnection(connectionURL,"sa","160501");
-			} catch (Exception e) {
-			System.out.println("Kết nối thất bại");
+			} 
+		catch (Exception e) {
 			}
 	}
 	public User checkLogin(String username, String password) {

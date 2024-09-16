@@ -115,12 +115,6 @@
            </div>
            <div class="register-row">
                <label for="" class="register-label">
-                   Email
-               </label>
-               <input type="text" placeholder="Email" class="register-input">
-           </div>
-           <div class="register-row">
-               <label for="" class="register-label">
                    Tuổi
                </label>
                <input type="text" placeholder="Tuổi" class="register-input">
@@ -131,9 +125,7 @@
             </label>
             <input type="text" placeholder="Giới tính" class="register-input">
             </div>
-            </div>
-       
-           <div class="register-row">
+            <div class="register-row">
                <label for="" class="register-label">
                    Mật khẩu
                </label>
@@ -145,6 +137,7 @@
                </label>
                <input type="text" placeholder="Nhập lại mật khẩu" class="register-input">
            </div>
+            </div>
            <button id="register-btn">
             Đăng kí
            </button>

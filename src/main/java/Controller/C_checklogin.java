@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Model.BEAN.User;
-import Model.DO.checkloginDO;
+import Model.BO.checkloginBO;
 
 /**
  * Servlet implementation class checkloginservlet
@@ -33,7 +33,7 @@ public class C_checklogin extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		checkloginDO check = new checkloginDO();
+		checkloginBO check = new checkloginBO();
 		User user = check.checkLogin(username, password);
 		response.setContentType("text/html;charset=UTF-8");
 		if (user == null){
